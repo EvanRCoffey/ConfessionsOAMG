@@ -1,0 +1,121 @@
+body {
+	text-align: center;
+	background-color: #C7D2D6;
+	color: #444747;
+	font-family: 'EB Garamond', serif;
+}
+
+h1 {
+	font-size: x-large;
+	text-align: center;
+}
+
+.contactMeField {
+	width: 400px;
+}
+
+.contactMeMessage {
+	width: 400px;
+	height: 180px;
+}
+
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/*p::first-letter { 
+    font-size: 200%;
+}*/
+
+.navBarLink {
+	padding-left: 60px;
+	padding-right: 60px;
+	text-decoration: none;
+	color: #444747;
+}
+
+#header {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#footer {
+	width: 70%;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#mainSection {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#disclaimerPic {
+	margin-top: 30px;
+  	margin-bottom: 30px;
+}
+
+.jumbotron {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	background-color: white;
+	margin-bottom: 0px;
+	border: 1px solid black;
+	padding: 25px;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+#leftContent {
+	border-right: 1px solid black;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#rightContent {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#bio {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-bottom: 1px solid black;
+}
+
+#professional {
+	border-bottom: 1px solid black;
+}
+
+#textboxMessage { 
+	width: 750px;
+}
+
