@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lesley's website - Resources</title>
+	<title>Lesley's website - About Me</title>
 	<!--Google Font-->
 	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 	<!-- Latest compiled and minified CSS -->
@@ -21,37 +21,51 @@
 <div class="jumbotron">
   <img src="assets/images/COA_MontessoriGuide.svg" id="logoimg">
 </div>
-	
+
 <!--Header, with links to Home, About Me, Resources, and Projects-->
 <div id="header">
 	<a href="index.html" class="navBarLink">Home</a>
 	<a href="projects.html" class="navBarLink">Projects</a>
-	<a href="resources.html" class="navBarLink" style="color: rgb(255,133,189);">Resources</a>
+	<a href="resources.html" class="navBarLink">Resources</a>
 	<a href="aboutMe.html" class="navBarLink">About Me</a>
-	<a href="contact.html" class="navBarLink">Contact</a>
+	<a href="contact.html" class="navBarLink" style="color: rgb(255,133,189);">Contact</a>
 </div>
 
 <!--Main page content-->
 <div id="mainSection">
-	<div id="resources">
+	<div id="contact">
 		<br>
-		<h1>Resources</h1>
+		<h1>Contact me</h1>
 		<br>
+		<form method="POST" name="contactform" action="contact-form-handler.php"> 
 		<p>
-		Association of Montessori International's official website:<br>
-		<a href="https://amiusa.org">AMIUSA.org</a>
+		<label for='name'>Your name:</label> <br>
+		<input type="text" name="name" class="contactMeField"><br><br>
 		</p>
-		<br>
 		<p>
-		North American Montessori Teachers' Association's official website:<br>
-		<a href="http://www.montessori-namta.org">Montessori-NAMTA.org</a>
+		<label for='email'>Your email address:</label> <br>
+		<input type="text" name="email" class="contactMeField"><br><br>
 		</p>
-		<br>
 		<p>
-		A website where trained Montessori guides can go to perfect their craft:<br>
-		<a href="http://montessoriguide.org/">MontessoriGuide.org</a>
+		<label for='message'>Your message:</label> <br>
+		<textarea name="message" class="contactMeMessage"></textarea><br><br>
 		</p>
-		<br>
+		<input type="submit" value="Send message"><br><br>
+		</form>
+
+		<script language="JavaScript">
+		// Code for validating the form
+		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+		// for details
+		var frmvalidator  = new Validator("contactform");
+		frmvalidator.addValidation("name","req","Please provide your name"); 
+		frmvalidator.addValidation("email","req","Please provide your email"); 
+		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+		</script>
+		<!--
+		Sample code from:
+		http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+		-->
 	</div>
 </div>
 

@@ -1,3 +1,4 @@
+/* Extra small devices (phones, less than 768px) */
 body {
 	text-align: center;
 	background-color: #C7D2D6;
@@ -8,6 +9,11 @@ body {
 h1 {
 	font-size: x-large;
 	text-align: center;
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
 }
 
 .contactMeField {
@@ -27,15 +33,16 @@ h1 {
   transform: rotate(90deg);
 }
 
-/*p::first-letter { 
-    font-size: 200%;
-}*/
-
 .navBarLink {
 	padding-left: 60px;
 	padding-right: 60px;
 	text-decoration: none;
 	color: #444747;
+}
+
+#logoimg {
+	height: 130px;
+	width: auto;
 }
 
 #header {
@@ -70,6 +77,21 @@ h1 {
 	border: 1px solid black;
 }
 
+#resources {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#projects {
+	padding-left: 50px;
+	padding-right: 50px;
+	text-align: left;
+}
+
+#centerLink {
+	text-align: center;
+}
+
 .jumbotron {
 	width: 70%;
 	margin-left: auto;
@@ -88,7 +110,7 @@ h1 {
 }
 
 #leftContent {
-	border-right: 1px solid black;
+	border-bottom: 1px solid black;
 	text-align: left;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -107,11 +129,101 @@ h1 {
 	border-bottom: 1px solid black;
 }
 
-#professional {
-	border-bottom: 1px solid black;
-}
+#professional {}
 
 #textboxMessage { 
 	width: 750px;
 }
 
+#proj1picR {
+	display: block;
+	margin: 0 auto;
+}
+
+#proj1picL {
+	display: block;
+	margin: 0 auto;
+}
+
+#proj1pic1 {
+	height: 250px;
+	width: auto;
+}
+
+#proj1pic2 {
+	height: 250px;
+	width: auto;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	.navBarLink {
+		padding-left: 70px;
+		padding-right: 70px;
+		text-decoration: none;
+		color: #444747;
+	}
+
+	#logoimg {
+		height: 160px;
+		width: auto;
+	}
+
+	#proj1pic1 {
+		height: 250px;
+		width: auto;
+	}
+
+	#proj1pic2 {
+		height: 250px;
+		width: auto;
+	}
+}
+ 
+/*Medium devices (desktops, 992px and up)*/ 
+@media (min-width: 992px) { 
+
+	.navBarLink {
+		padding-left: 80px;
+		padding-right: 80px;
+		text-decoration: none;
+		color: #444747;
+	}
+
+	#proj1pic1 {
+		height: 400px;
+		width: auto;
+	}
+
+	#proj1pic2 {
+		height: 400px;
+		width: auto;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	.navBarLink {
+		padding-left: 40px;
+		padding-right: 40px;
+		text-decoration: none;
+		color: #444747;
+	}
+
+	#leftContent {
+		border-right: 1px solid black;
+		border-bottom: 0;
+	}
+
+	#proj1picR {
+		display: inline;
+		float: right;
+	}
+
+	#proj1picL {
+		display: inline;
+	}
+}
